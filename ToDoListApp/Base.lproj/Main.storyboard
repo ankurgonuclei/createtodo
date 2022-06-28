@@ -70,7 +70,7 @@
                             </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="DVN-sr-11J"/>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
                         <constraints>
                             <constraint firstItem="DVN-sr-11J" firstAttribute="trailing" secondItem="wgC-72-UgI" secondAttribute="trailing" constant="20" id="FSx-CB-kFi"/>
                             <constraint firstItem="wgC-72-UgI" firstAttribute="leading" secondItem="DVN-sr-11J" secondAttribute="leading" constant="20" id="KQV-Xl-mTJ"/>
@@ -78,7 +78,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="field" destination="wgC-72-UgI" id="uB7-cW-zbA"/>
+                        <outlet property="field" destination="wgC-72-UgI" id="eQf-Mk-EPi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3cM-Ud-3NQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -92,9 +92,25 @@
                     <view key="view" contentMode="scaleToFill" id="6dV-z8-qm1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mfz-D5-m9H">
+                                <rect key="frame" x="186" y="437.5" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="ObZ-oH-if7"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="mfz-D5-m9H" firstAttribute="centerX" secondItem="6dV-z8-qm1" secondAttribute="centerX" id="Hdm-U3-rm6"/>
+                            <constraint firstItem="mfz-D5-m9H" firstAttribute="centerY" secondItem="6dV-z8-qm1" secondAttribute="centerY" id="XTZ-g3-gzv"/>
+                            <constraint firstItem="mfz-D5-m9H" firstAttribute="centerX" secondItem="6dV-z8-qm1" secondAttribute="centerX" id="s7R-Ig-IJQ"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="label" destination="mfz-D5-m9H" id="SXU-rd-1Sr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oPD-f4-T7Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -122,6 +138,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
